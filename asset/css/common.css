@@ -154,18 +154,20 @@ nav.top__menu ul li a span {
 
 /* top__images */
 
-.top__images.center { margin: 0 0 50px;}
-.top__images div.center img { width: 100%; height: auto;}
+.top__images__wrapper.slide__wrapper { margin: 5px;}
+.top__images__wrapper.slide__wrapper.slide__area { width: 100%; height: auto;}
+
+.slide__wrapper {
+  width: 100%;
+}
+
 
 .slide-arrow{
   position: absolute;
   top: 50%;
   margin-top: -15px;
 }
-.slide-arrow.prev-arrow {
-  width: 30px;
-  height: 30px;
-}
+
 
 
 /* End of top__images */

@@ -117,13 +117,3 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-.slick-slider .slick-track, .slick-slider .slick-list{
-    background: #fff;
-  }
-  .slick-initialized .slick-slide{
-    opacity: 0.6; /* 両サイドの画像を透過 */
-  }
-  .slick-initialized .slick-slide.slick-active{
-    opacity: 1; /* センター画像を非透過 */
-  }

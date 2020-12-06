@@ -59,12 +59,12 @@
                 </nav>
             </div>
         </div>
-        <div class="top__images">
-            <div class="center">
-                <div><img src="asset/images/slide_01.jpg" alt=""></div>
-                <div><img src="asset/images/slide_02.jpg" alt=""></div>
-                <div><img src="asset/images/slide_03.jpg" alt=""></div>
-                <div><img src="asset/images/slide_04.jpg" alt=""></div>
+        <div class="top__image__wrapper">
+            <div class="slide__wrapper">
+                <div class="slide__area"><img src="asset/images/slide_01.jpg"></div>
+                <div class="slide__area"><img src="asset/images/slide_02.jpg"></div>
+                <div class="slide__area"><img src="asset/images/slide_03.jpg"></div>
+                <div class="slide__area"><img src="asset/images/slide_04.jpg"></div>
             </div>
         </div>
 
@@ -86,12 +86,14 @@
 <script type="text/javascript">
 
   $(document).ready(function(){
-    $('.center').slick({
+    $('.slide__wrapper').slick({
         infinite: true, //スライドのループ有効化
         dots:true, //ドットのナビゲーションを表示
         centerMode: true, //要素を中央寄せ
         centerPadding:'15%', //両サイドの見えている部分のサイズ
         autoplay:true, //自動再生
+        autoplaySpeed: 2500,
+        speed: 800,
         arrows:true, //矢印の表示
         prevArrow: '<img src="asset/images/arrow_prev.png" class="slide-arrow prev-arrow">',
         nextArrow: '<img src="asset/images/arrow_next.png" class="slide-arrow next-arrow">',
