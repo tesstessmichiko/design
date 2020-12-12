@@ -24,8 +24,8 @@ body {
     background: var(--mainbg);
     margin: 0;
     padding: 0;
-    font-family: "Yu gothic" "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    font-weight: 200;
+    font-family: "system-ui", sans-serif;
+    font-weight: 400;
 }
 
 h1,
@@ -57,6 +57,169 @@ a {
 #menu3 {
   display: none;
 }
+
+/* End of top__menu */
+
+/* title__ber */
+
+.title__ber {
+  height: 4rem;
+  width: 100%;
+  background: var(--subbg);
+  text-align: center;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  top: 0;
+  z-index: 20;
+}
+
+.top__menu {
+  width: 100%;
+}
+
+.title__ber h1.company__logo a img {
+  width: 212px;
+  height: 4rem;
+  margin-left: 1rem;
+  z-index: 0;
+}
+
+.title__ber ul {
+  display: flex;
+  border: green 3px solid;
+  width: 100%;
+  margin: 0px;
+  padding-left: 50%;
+}
+
+.title__ber ul li {
+  flex-direction: row;
+  height: 64px;
+  width: 100%;
+  padding-top: 10px;  
+  color: var(--letterblack);
+}
+
+nav.top__menu ul li a span {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  opacity: 0.7;
+  color: var(--letterblack);
+}
+
+/* End of head__wrapper */
+
+/* top__images__wrapper */
+
+.top__image__wrapper.slide__wrapper { margin: 5px;}
+.top__image__wrapper.slide__wrapper.slide__area { width: 100%; height: auto;}
+
+.slide__wrapper {
+  width: 100%;
+}
+
+.slide__wrapper.slide__area {
+  opacity: 0.5;
+  transition: 0.2s linear;
+}
+
+
+.slide__area img {
+  width: 100%;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list{
+  background: #fff;
+}
+.slick-initialized .slick-slide{
+  opacity: 0.4; /* 両サイドの画像を透過 */
+}
+.slick-initialized .slick-slide.slick-active{
+  opacity: 1; /* センター画像を非透過 */
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.prev-arrow {
+  left: 5%;
+  z-index: 10;
+}
+.next-arrow {
+  right: 5%;
+}
+/* End of top__images */
+
+/* main__wrapper */
+
+.about__us,
+.news__wrapper {
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.about__us p {
+  width: 75%;
+}
+
+.about__us__button {
+  display: inline-block;
+  width: 25%;
+  padding: 0 1.6rem;
+  margin-left: 4rem;
+  font-size: 1em;
+  text-decoration: none;
+  user-select: none;
+  border: 1px var(--letterblack) solid;
+  border-radius: 6px;
+  transition: 0.4s ease;
+  letter-spacing: 0.5rem;
+}
+
+.about__us__button img {
+  padding-top: 1rem;
+}
+.about__us a.content {
+  font-size: 1.5rem;
+}
+
+.about__us__button:hover {
+  color: var(--subbg);
+  background: var(--letterblack);
+}
+.fa-arrow-right {
+  margin-left: 0.5em;
+}
+
+/* End of main__wrappe */
+/* news__wrapper */
+.news__wrapper h2 span {
+  opacity: 0.6;
+  font-weight: lighter;
+}
+.news__wrapper h2 span.subtitle {
+  font-size: 1rem;
+}
+
+/* End of news__wrapper */
+
+
+
+/* 枠の確認 */
+/* .head__wrapper {
+  border: 3px solid red;
+}
+.title__ber {
+  border: 3px solid blue;
+} */
 
 @media (max-width:768px) {
 
@@ -96,116 +259,8 @@ a {
     transform: translateY(-12px) rotate(45deg);
   }
 
+  .top__image__wrapper {
+    margin-top: 40px;
+  }
   
 }
-
-/* End of top__menu */
-
-/* title__ber */
-
-.title__ber {
-  height: 4rem;
-  width: 100%;
-  background: var(--subbg);
-  text-align: center;
-  z-index: 2;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  top: 0;
-  z-index: 20;
-}
-
-.top__menu {
-  width: 100%;
-}
-
-.title__ber h1.company__logo a img {
-  width: 212px;
-  height: 64px;
-  z-index: 0;
-}
-
-.title__ber ul {
-  display: flex;
-  border: green 3px solid;
-  width: 100%;
-  margin: 0px;
-  padding-left: 50%;
-}
-
-.title__ber ul li {
-  flex-direction: row;
-  height: 64px;
-  width: 100%;
-  padding-top: 10px;  
-  color: var(--letterblack);
-}
-
-nav.top__menu ul li a span {
-  display: block;
-  font-size: 12px;
-  font-weight: normal;
-  opacity: 0.7;
-  color: var(--letterblack);
-}
-
-/* End of head__wrapper */
-
-/* top__images */
-
-.top__images__wrapper.slide__wrapper { margin: 5px;}
-.top__images__wrapper.slide__wrapper.slide__area { width: 100%; height: auto;}
-
-.slide__wrapper {
-  width: 100%;
-}
-
-
-.slide-arrow{
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
-}
-
-
-
-/* End of top__images */
-
-/* main__container */
-
-.main__container {
-  width: 70%;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.main__container p {
-  width: 60%;
-}
-
-.btn-flat-border {
-  display: inline-block;
-  padding: 0.3rem 1rem;
-  text-decoration: none;
-  color: var(--letterblack);
-  border: solid 1px var(--letterblack);
-  border-radius: 3px;
-  transition: .4s;
-}
-
-.btn-flat-border:hover {
-  background:var(--letterblack);
-  color: white;
-}
-
-/* 枠の確認 */
-/* .head__wrapper {
-  border: 3px solid red;
-}
-.title__ber {
-  border: 3px solid blue;
-} */

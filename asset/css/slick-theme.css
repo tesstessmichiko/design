@@ -177,7 +177,7 @@ animation: arrow_next .5s ease-out forwards;
 .slick-prev{
     left: 30px;                 
 }
- .slick-next{
+.slick-next{
    right: 30px;
 }
 }
