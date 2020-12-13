@@ -131,6 +131,8 @@ nav.top__menu ul li a span {
   width: 100%;
 }
 
+
+/* スライドのセンター画像を非透過・サイドを透過 */
 .slick-slider .slick-track, .slick-slider .slick-list{
   background: #fff;
 }
@@ -140,6 +142,7 @@ nav.top__menu ul li a span {
 .slick-initialized .slick-slide.slick-active{
   opacity: 1; /* センター画像を非透過 */
 }
+/* END OF スライドのセンター画像を非透過・サイドを透過 */
 
 .slick-arrow {
   position: absolute;
@@ -158,8 +161,7 @@ nav.top__menu ul li a span {
 
 /* main__wrapper */
 
-.about__us,
-.news__wrapper {
+.about__us {
   width: 70%;
   margin: 20px auto;
   display: flex;
@@ -187,6 +189,7 @@ nav.top__menu ul li a span {
 .about__us__button img {
   padding-top: 1rem;
 }
+
 .about__us a.content {
   font-size: 1.5rem;
 }
@@ -195,12 +198,22 @@ nav.top__menu ul li a span {
   color: var(--subbg);
   background: var(--letterblack);
 }
+
 .fa-arrow-right {
   margin-left: 0.5em;
 }
 
 /* End of main__wrappe */
+
+
 /* news__wrapper */
+.news__wrapper {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
 .news__wrapper h2 span {
   opacity: 0.6;
   font-weight: lighter;
@@ -209,6 +222,37 @@ nav.top__menu ul li a span {
   font-size: 1rem;
 }
 
+.table__wrapper table {
+  padding: 20px 10px;
+  line-height: 3;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 20px;
+  width: 95%;
+  border-collapse: collapse;
+}
+.table__wrapper th {
+  width: 9rem;
+  color:var(--letterblack);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  border-bottom: 1px solid var(--letterblack);
+}
+.table__wrapper td {
+  padding-left: 9em;
+  border-bottom: 1px solid var(--letterblack);
+}
+
+.whatsnew {
+  background: var(--subaccent);
+  color: #FFF;
+  font-size: 70%;
+  line-height: 1.5;
+  padding: 2px 5px;
+  border-radius: 4px;
+  margin: 0px 5px;
+  vertical-align: text-top;
+}
 /* End of news__wrapper */
 
 
