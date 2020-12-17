@@ -161,9 +161,13 @@ nav.top__menu ul li a span {
 
 /* main__wrapper */
 
+.main__wrapper {
+  width: 100%;
+}
+
 .about__us {
-  width: 70%;
-  margin: 20px auto;
+  width: 75%;
+  margin: 2rem auto;
   display: flex;
   flex-direction: row;
 }
@@ -174,33 +178,62 @@ nav.top__menu ul li a span {
 
 .about__us__button {
   display: inline-block;
+  line-height: 3rem;
   width: 25%;
   padding: 0 1.6rem;
   margin-left: 4rem;
-  font-size: 1em;
+  font-size: 1rem;
   text-decoration: none;
   user-select: none;
   border: 1px var(--letterblack) solid;
   border-radius: 6px;
-  transition: 0.4s ease;
   letter-spacing: 0.5rem;
 }
 
 .about__us__button img {
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
-.about__us a.content {
-  font-size: 1.5rem;
+.about__us__button {
+  text-align: center;
+  vertical-align: middle;
+}
+.center__button {
+  display: block;
+  line-height: 3rem;
+  width: 25%;
+  margin: 2rem auto;
+  padding: 0 1.6rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1px var(--letterblack) solid;
+  border-radius: 6px;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+.contents__button {
+  display: block;
+  margin: 0 auto;
 }
 
-.about__us__button:hover {
-  color: var(--subbg);
-  background: var(--letterblack);
+.work__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.fa-arrow-right {
-  margin-left: 0.5em;
+.item__list1 {
+  float: left;
+  width: 32%;
+  margin: 5px;
+}
+
+.item__list1 img {  
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 /* End of main__wrappe */
@@ -209,9 +242,13 @@ nav.top__menu ul li a span {
 /* news__wrapper */
 .news__wrapper {
   display: block;
-  width: 70%;
+  width: 75%;
   margin: auto;
   margin-top: 3rem;
+}
+.common__title h2 {
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 .news__wrapper h2 span {
@@ -219,12 +256,12 @@ nav.top__menu ul li a span {
   font-weight: lighter;
 }
 .news__wrapper h2 span.subtitle {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .table__wrapper table {
   padding: 20px 10px;
-  line-height: 3;
+  line-height: 3rem;
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 20px;
@@ -237,6 +274,8 @@ nav.top__menu ul li a span {
   font-weight: bold;
   letter-spacing: 0.1rem;
   border-bottom: 1px solid var(--letterblack);
+  text-align: initial;
+  padding-left: 3rem;
 }
 .table__wrapper td {
   padding-left: 9em;
@@ -246,15 +285,27 @@ nav.top__menu ul li a span {
 .whatsnew {
   background: var(--subaccent);
   color: #FFF;
-  font-size: 70%;
-  line-height: 1.5;
+  font-size: 100%;
+  line-height: 2rem;
   padding: 2px 5px;
   border-radius: 4px;
   margin: 0px 5px;
-  vertical-align: text-top;
+}
+
+.recruit__wrapper {
+  margin: 2rem auto;
+  margin-bottom: 10rem;
 }
 /* End of news__wrapper */
-
+footer {
+  width: 100%;
+  height: 20rem;
+  background-color: var(--subaccent);
+  color: var(--subbg);
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-align: left;
+}
 
 
 /* 枠の確認 */
@@ -305,6 +356,31 @@ nav.top__menu ul li a span {
 
   .top__image__wrapper {
     margin-top: 40px;
+  }
+
+  .about__us {
+    display: block;
+  }
+
+  .about__us p {
+    width: 100%;
+  }
+
+  .about__us__button {
+    width: 90%;
+    margin: 1rem auto;
+
+  }
+
+  .work__wrapper {
+    display: block;
+  }
+  .item__list1 {
+    width: 100%;
+  }
+
+  .center__button {
+    width: 90%;
   }
   
 }
