@@ -52,6 +52,29 @@ a {
 
 /* End of Global */
 
+/* head__wrapper */
+.head__wrapper{
+
+}
+
+.nav__wrapper{
+
+}
+
+.top__image__wrapper {
+  margin-top: 2.5rem;
+}
+
+.top__image__wrapper.slide__wrapper { 
+  margin: 5px;
+}
+
+.top__image__wrapper.slide__wrapper.slide__area { 
+  width: 100%; height: auto;
+}
+
+/* End of head__wrapper */
+
 /* top__menu */
 
 #menu3 {
@@ -66,6 +89,7 @@ a {
   height: 4rem;
   width: 100%;
   background: var(--subbg);
+  
   text-align: center;
   z-index: 2;
   display: flex;
@@ -88,7 +112,6 @@ a {
 
 .title__ber ul {
   display: flex;
-  border: green 3px solid;
   width: 100%;
   margin: 0px;
   padding-left: 50%;
@@ -110,12 +133,21 @@ nav.top__menu ul li a span {
   color: var(--letterblack);
 }
 
+li.contact__page {
+  background-color: var(--subaccent);
+}
+li.contact__page a {
+  color: var(--mainbg);
+}
+nav.top__menu ul li.contact__page a span {
+  color: var(--mainbg);
+}
+
 /* End of head__wrapper */
 
 /* top__images__wrapper */
 
-.top__image__wrapper.slide__wrapper { margin: 5px;}
-.top__image__wrapper.slide__wrapper.slide__area { width: 100%; height: auto;}
+
 
 .slide__wrapper {
   width: 100%;
@@ -125,8 +157,6 @@ nav.top__menu ul li a span {
   opacity: 0.5;
   transition: 0.2s linear;
 }
-
-
 .slide__area img {
   width: 100%;
 }
@@ -316,6 +346,15 @@ footer {
   border: 3px solid blue;
 } */
 
+/*      COMPANY.HTML      */
+
+.slide__wrapper__wide {
+  width: 100%;
+  height: auto;
+}
+
+/*      COMPANY.HTML      */
+
 @media (max-width:768px) {
 
   div.title__ber {
@@ -354,9 +393,7 @@ footer {
     transform: translateY(-12px) rotate(45deg);
   }
 
-  .top__image__wrapper {
-    margin-top: 40px;
-  }
+  
 
   .about__us {
     display: block;
